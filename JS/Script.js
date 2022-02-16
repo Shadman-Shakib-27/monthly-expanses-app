@@ -20,6 +20,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
 })
 
 document.getElementById('interest-button').addEventListener('click',function(){
+   // Problem
    const incomeInput = document.getElementById('income-input').value;
    const interest = document.getElementById('interest').value;
    const totalInterest = parseFloat(incomeInput) / parseFloat(interest); 
