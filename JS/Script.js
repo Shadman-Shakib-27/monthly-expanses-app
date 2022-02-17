@@ -1,4 +1,5 @@
 document.getElementById('calculate-btn').addEventListener('click',function(){
+   //  Total Expenses Part
    const foodInput = document.getElementById('food-input').value;
    foodInput.value = '';
 
@@ -15,15 +16,15 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
 
    const incomeInput = document.getElementById('income-input').value;
    const balance = document.getElementById('balance');
-   const balanceAmount = balance.innerText; 
    balance.innerText = parseFloat(incomeInput) - parseFloat(totalexpense);
 })
-
+// Bonus Part
 document.getElementById('interest-button').addEventListener('click',function(){
-   // Problem
+   
    const incomeInput = document.getElementById('income-input').value;
    const interest = document.getElementById('interest').value;
-   const totalInterest = parseFloat(incomeInput) / parseFloat(interest); 
+   let totalInterest = parseFloat(incomeInput) *  parseFloat(interest)/100; 
+
    const savings = document.getElementById('savings');
    savings.innerText = totalInterest;
 
